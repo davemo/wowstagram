@@ -1,0 +1,14 @@
+{
+  "name": "wowstagram",
+  "description": "it's like instagram, for your wow toons.",
+  "version": "0.0.1",
+  "private": true,
+  "author": "David Mosher",
+  "devDependencies": {
+    "lineman": "~0.29.2"
+  },
+  "scripts": {
+    "start": "lineman run",
+    "test": "lineman spec-ci"
+  }
+}

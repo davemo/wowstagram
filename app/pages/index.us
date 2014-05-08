@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html ng-app="wowstagram">
+  <head>
+    <title><%= pkg.name %> | <%= pkg.description %></title>
+
+    <link rel="stylesheet" type="text/css" href="<%= css %>" media="all" />
+  </head>
+  <body ui-view>
+    <div id="header">
+      <div class="wrap">
+        <h1 class="title">
+          <a href="http://www.twitter.com/dmosher">wowstagram</a>
+        </h1>
+        <h1 class="subtitle">
+          <% pkg.description %>
+        </h1>
+      </div>
+    </div>
+
+    <div id="content">
+      <div class="wrap">
+
+        <form ng-submit="fetchPicture()" class="double-quest-frame">
+          <div class="quest-pane quest-log"></div>
+          <div class="quest-pane quest-details">
+            <h2>Find Yourself</h2>
+
+            <p>Enter your character details.</p>
+
+            <p class="quest-objective">
+              Character Retrieved: <span class="numerator">0</span> <span class="denominator">/ 1</span>
+            </p>
+
+            <h2>Description</h2>
+
+            <p>Fill out the required fields below to see your character.</p>
+
+            <ul>
+              <li>
+                <label>Server:</label>
+                <input type="text" ng-model="toon.server" class="required">
+              </li>
+              <li>
+                <label>Character:</label>
+                <input type="text" ng-model="toon.name" class="required">
+              </li>
+              <li>
+                <label>Locale:</label>
+                <select name="locale" id="locale" ng-model="toon.locale" ng-options="locale.value for locale in localeOptions"></select>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="double-quest-frame-bottom-buttons">
+            <li>
+              <input type="submit" class="ui-panel-button close" value="Fetch Details">
+            </li>
+          </ul>
+        </form>
+
+      </div>
+
+      <div class="polaroid hidden" id="polaroid">
+        <span class="pane">
+          <img src="">
+        </span>
+        <span class="caption">
+          Chosen
+        </span>
+        <a href="#" class="close">[x]</a>
+      </div>
+    </div>
+
+    <div id="footer">
+      <div class="wrap">
+        <p class="who">
+          a work in progress by <a href="http://twitter.com/dmosher">@dmosher</a>
+        </p>
+        <p class="using">
+          using <a href="http://nodejs.org">NodeJS</a>
+        </p>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="<%= js %>"></script>
+  </body>
+</html>

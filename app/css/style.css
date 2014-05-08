@@ -1,0 +1,236 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  color: #211803;
+  background-color: #333333;
+}
+
+article, aside, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+h1, h2 {
+    margin: 0px;
+}
+
+#main {
+    padding: 50px;
+}
+
+#header {
+    background: #212121;
+    color: #eee;
+    overflow: hidden;
+    min-height: 65px;
+}
+
+#header .title {
+    float: left;
+}
+#header .subtitle {
+    float: right;
+    color: #495354;
+}
+
+#header a {
+    text-decoration: none;
+    color: white;
+}
+
+#content {
+    color: #EFC9A0;
+    min-height: 500px;
+    background-image: -moz-linear-gradient(top, #333333, #000000);
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #333333),color-stop(1, #000000));
+    background-image: -webkit-linear-gradient(#333333, #000000);
+    background-image: linear-gradient(top, #333333, #000000);
+              filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#333333', EndColorStr='#000000');
+
+}
+
+.wrap {
+    width: 990px;
+    margin: 0 auto;
+    padding: 1em 0;
+}
+
+#footer {
+    color: #eee;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.hidden {
+    display: none !important;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+label.error {
+    display: block;
+    margin-left: 75px;
+    width: auto;
+    color: #6c0905;
+    text-shadow: 1px 1px 0px #9c7322;
+}
+
+.quest-details label {
+    width: 75px;
+    display: inline-block;
+}
+
+.quest-details input[type='text'] {
+    width: 190px;
+}
+
+.quest-details li {
+    margin-bottom: 10px;
+}
+
+.double-quest-frame-bottom-buttons {
+    position: absolute;
+    bottom: 6px;
+    left: 16px;
+    width: 657px;
+}
+
+.ui-panel-button.close {
+    float: right;
+}
+
+.double-quest-frame {
+    background: url('/img/wow/questframe.png') top left no-repeat;
+    height: 440px;
+    width: 681px;
+    position: relative;
+}
+
+.ui-panel-button {
+    background: url('/img/wow/buttons.sprite.png'); /** sprite these **/
+    height: 21px;
+    width: 78px;
+    color: #ffd100;
+    border: none;
+    font-size: 10px;
+}
+
+.ui-panel-button:hover {
+    background-position: 0px -42px;
+    cursor: pointer;
+}
+
+.ui-panel-button:active {
+    background-position: 0px -21px;
+    padding-right: 1px;
+}
+
+.quest-pane p {
+    font-weight: 300;
+    font-style: normal;
+}
+
+.quest-pane h2 {
+    margin-top: 2px;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 0px #9c7322;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.quest-pane {
+    position: absolute;
+    height: 314px;
+    width: 279px;
+    padding: 10px;
+    top: 76px;
+    overflow: hidden;
+}
+
+.quest-log {
+    left: 22px;
+}
+
+.quest-details {
+    color: #211803;
+    right: 31px;
+}
+
+.polaroid {
+    background: #eee;
+    width: 500px;
+    height: 520px;
+    position: relative;
+    top: 18px;
+    left: 18px;
+    display: inline-block;
+
+       -moz-transform: rotate(-3.5deg);
+         -o-transform: rotate(-3.5deg);
+    -webkit-transform: rotate(-3.5deg);
+        -ms-transform: rotate(-3.5deg);
+            transform: rotate(-3.5deg);
+               filter: progid:DXImageTransform.Microsoft.Matrix(
+                       M11=0.9981347984218669, M12=0.06104853953485687, M21=-0.06104853953485687, M22=0.9981347984218669, sizingMethod='auto expand');
+                 zoom: 1;
+
+}
+
+.polaroid .pane {
+    -webkit-mask-box-image: url('/img/wow/polaroid.mask.png');
+    display: block;
+    width: 462px;
+    height: 429px;
+    position: absolute;
+    left: 18px;
+    top: 18px;
+}
+
+.polaroid .caption {
+    position: absolute;
+    bottom: 0px;
+    height: 52px;
+    padding: 5px 20px;
+    width: 260px;
+    color: black;
+}
+
+.polaroid .close {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    text-decoration: none;
+    color: #666;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.pane img {
+    position: absolute;
+}
+
+img.Human {
+    left: -110px;
+    top: -100px;
+}
+
+img.Gnome {
+    left: -130px;
+    top: -130px;
+}
+
+img.Worgen {
+    left: -180px;
+    top: -130px;
+}
+
+img.Night.Elf {
+    left: -100px;
+    top: -90px;
+}
